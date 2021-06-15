@@ -8,9 +8,8 @@ function calculate() {
   var tip_amount = (parseFloat(tip) / 100) * parseFloat(bill_amount);
   var total_amount = parseFloat(bill_amount) + parseFloat(tip_amount);
   var bill_share = parseFloat(total_amount) / number_of_persons;
-  if (isNaN(total_amount) || isNaN(bill_share) || bill_share === "") {
+  if (isNaN(total_amount)) {
     total_amount = 0;
-    bill_share = 0;
   }
   if (!isFinite(bill_share)) {
       bill_share = 0;
