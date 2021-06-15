@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator_container">
+        <h1>Tip Calculator</h1>
+        <div class="form_control">
+            <label for="bill">Bill (in $)</label>
+            <input type="number" id="bill_value" placeholder="Bill amount" />
+        </div>
+
+        <div class="form_control">
+            <label for="tip">Tip %</label>
+            <input type="number" id="tip_value" placeholder="Tip" />
+        </div>
+        <div class="form_control">
+            <label for="person">Number of persons</label>
+            <input type="number" id="person_value" placeholder="Number of persons" />
+        </div>
+
+        <footer>
+            <div class="result">
+                <span>Share per person:</span> <strong id="share">[$0.00]</strong>
+            </div>
+            <div class="result">
+                <span>Total Bill:</span> <strong id="total">[$0.00]</strong>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
